@@ -25,7 +25,7 @@ int main(){
         time(&start);
         do{
             no_of_tries++;
-            rand_str = gen_random(size(word));
+            rand_str = gen_random(word.length());
             //cout<<rand_str<<endl;
         }while(rand_str != word);
         time(&end);
