@@ -1,9 +1,8 @@
 #include <iostream>
 using namespace std;
 
-
+static const char alphanum[] = "abcdefghijklmnopqrstuvwxyz";
 string gen_random(const int len) {
-    static const char alphanum[] = "abcdefghijklmnopqrstuvwxyz";
     string tmp_s;
     tmp_s.reserve(len);
     for (int i = 0; i < len; ++i) {
